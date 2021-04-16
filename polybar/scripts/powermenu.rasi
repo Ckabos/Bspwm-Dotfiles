@@ -38,7 +38,7 @@ textbox-prompt-colon {
     	background-color:               @background;
     	text-color:                     @logo;
     	padding:                        0px 0px;
-	font:				"NerdFonts 16";
+	font:				"NerdFonts 14";
 }
 
 inputbar {

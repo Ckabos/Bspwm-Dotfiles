@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#/usr/bin/env bash
 
 # Terminate already running bar instances
 killall polybar -q
@@ -9,4 +9,4 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 # Launch polybar
 polybar main -c /home/$USER/.config/polybar/config.ini &
 polybar twomain -c /home/$USER/.config/polybar/config.ini & 
-polybar threemain -c /home/$USER/.config/polybar/config &
+polybar threemain -c /home/$USER/.config/polybar/config.ini &

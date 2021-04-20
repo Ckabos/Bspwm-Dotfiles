@@ -39,7 +39,6 @@ alternative_ui_separator_color = black
 window_border_color = cyan
 active_window_border = red
 execute_on_song_change="~/.config/ncmpcpp/ncmpcpp-ueberzug/ncmpcpp_cover_art.sh"
-#execute_on_song_change = notify-send "Now Playing" "$(mpc --format '%title% \n%artist% - %album%' current)"
 
 visualizer_data_source = "/tmp/mpd.fifo"
 visualizer_output_name = "my_fifo"

@@ -1,0 +1,57 @@
+#!/bin/sh
+
+$HOME/.config/polybar/launch.sh
+pgrep -x sxhkd > /dev/null || sxhkd &
+wmname LG3D &
+
+# Feh
+feh --bg-fill ~/Imágenes/Wallpapers/Aoi-Ogata-long-hair-black-hair-pigtails-women-mask-1224828-wallhere.com.jpg
+
+# Compton
+compton --config /home/efrain/.config/compton/compton.conf &
+
+#Applet
+nm-applet &
+
+#Miscelaneous
+setxkbmap es &
+
+#Focus in the mouse
+bspc configo focus_follow_pointer true
+
+bspc config pointer_modifier mod1
+bspc monitor -d          
+
+bspc config border_width	1
+bspc config window_gap		5
+bspc config split_radio		0.52
+bspc config borderless_monocle	true
+bspc config gapple_monocle	true
+
+# Windows assignation to workspaces
+bspc rule -a URxvt desktop='^1' follow=on
+bspc rule -a Pavucontrol desktop='^9' state=tiled follow=on
+bspc rule -a Nitrogen desktop='^9' state=tiled follow=on
+bspc rule -a firefox desktop='^2' follow=on
+bspc rule -a Opera desktop='^2'follow=on
+bspc rule -a qutebrowser desktop='^2' follow=on
+bspc rule -a Org.gnome.Nautilus desktop='^3' follow=on
+bspc rule -a "Spotify" desktop='^4'
+bspc rule -a "YouTube Music" desktop='^4'
+bspc rule -a Youtube desktop='^4'
+bspc rule -a Code desktop='^5'
+bspc rule -a "urxvt -e ranger" desktop='^5' state=floating follow=on
+bspc rule -a discord desktop='^6'
+bspc rule -a Wpspdf desktop='^7'
+bspc rule -a Wps desktop='^7'
+bspc rule -a Et desktop='^7'
+bspc rule -a Wpp desktop='^7'
+bspc rule -a Zathura desktop='^7' state=tiled follow=on
+bspc rule -a TelegramDesktop desktop='^6'
+bspc rule -a MEGAsync desktop='^8' follow=on state=floating
+bspc rule -a kdeconnect.app desktop='^8' follow=on
+bspc rule -a Alarm-clock-applet desktop='^9' state=tiled follow=on
+bspc rule -a Blueberry.py desktop='^9' follow=on
+bspc rule -a Lxappearance desktop='^9' state=tiled follow=on
+bspc rule -a Qalculate-gtk desktop='^10' state=tiled follow=on
+

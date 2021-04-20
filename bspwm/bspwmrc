@@ -1,6 +1,8 @@
 #!/bin/sh
 
+# Launch polybar bars!
 $HOME/.config/polybar/launch.sh
+
 pgrep -x sxhkd > /dev/null || sxhkd &
 wmname LG3D &
 

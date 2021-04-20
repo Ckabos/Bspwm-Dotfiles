@@ -185,3 +185,11 @@ super + {b}
 
 super + {r}
 	exec ~/.config/bspwm/scripts/ranger.sh
+
+
+#################################
+#	ncmpcpp			#
+#################################
+
+super + {n}
+	exec ~/.config/bspwm/scripts/ncmpcpp.sh

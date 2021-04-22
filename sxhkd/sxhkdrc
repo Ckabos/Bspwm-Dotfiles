@@ -131,28 +131,40 @@ super + {Left,Down,Up,Right}
 ctrl + alt + {Delete}
 	i3lock-fancy
 
+
 #################################
-#	Backlight Controls      #
+#   Controles de Brillo         #
 #################################
 
-{XF86MonBrightnessDown,XF86MonBrightnessUp}
+
+alt + {Down,Up}
 	xbacklight -{dec,inc} 5
 
 
 #####################################
-#	PulseAudio Controls	    #
+#	Controles de Pulseaudio	    #
 #####################################
+
+
+super + {F9,F10}
+	/usr/bin/pactl set-sink-volume 0 {-5%, +5%}
+
+super + {F11}
+	/usr/bin/pactl set-sink-mute 0 toggle
 
 {XF86AudioRaiseVolume,XF86AudioLowerVolume}
 	/usr/bin/pactl set-sink-volume 0 {+5%,-5%}
 
-{XF86AudioMute}
-	/usr/bin/pactl set-sink-mute 0 toggle
+#{XF86AudioMute}
+#	/usr/bin/pactl set-sink-mute 0 toggle
 
 
 ##################################
-#	Multimedia Controls	 #
+#	Controles Multimedia	 #
 ##################################
+
+super + {F6,F7,F8}
+	playerctl {previous,play-pause,next}
 	
 {XF86AudioStop,XF86AudioPlay,XF86AudioPrev,XF86AudioNext}
 	playerctl {stop,play-pause,previous,next}
@@ -186,10 +198,16 @@ super + {b}
 super + {r}
 	exec ~/.config/bspwm/scripts/ranger.sh
 
-
 #################################
 #	ncmpcpp			#
 #################################
 
 super + {n}
 	exec ~/.config/bspwm/scripts/ncmpcpp.sh
+
+#####################################
+#   MPC-MPD Multimedia Keybindings  #
+#####################################
+
+super + {XF86AudioPrev,XF86AudioPlay,XF86AudioStop,XF86AudioNext}
+	mpc {prev,toggle,stop,next}

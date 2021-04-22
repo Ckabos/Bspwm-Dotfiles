@@ -25,7 +25,7 @@
 - **`Source Code Pro Nerd Font`**
 - **`Iosevka Nerd Font`**
 
-### Instalation 
+### Installation 
 
 - First, clone the repository.
 

@@ -75,6 +75,7 @@ bspc rule -a Zathura desktop='^7' state=tiled follow=on
 bspc rule -a MEGAsync desktop='^8' follow=on state=floating
 bspc rule -a Transmission-gtk desktop='^8' follow=on state=floating
 bspc rule -a System-config-printer.py desktop='^8' follow=on state=floating
+bspc rule -a obs desktop='^8'state=tiled follow=on
 bspc rule -a Protonvpn-gui desktop='^8' follow=on state=floating
 bspc rule -a BlueMail desktop='^8' follow=on state=floating
 bspc rule -a scrcpy desktop='^8' follow=on state=floating

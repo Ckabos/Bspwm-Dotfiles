@@ -30,7 +30,7 @@ kdeconnect-indicator &
 setxkbmap es &
 
 #Focus in the mouse
-bspc configo focus_follow_pointer true
+bspc config focus_follows_pointer true
 
 bspc config pointer_modifier mod1
 bspc monitor -d          

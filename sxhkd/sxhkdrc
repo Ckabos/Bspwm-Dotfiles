@@ -1,6 +1,6 @@
 # terminal emulator
 super + Return
-	urxvt
+	alacritty
 
 # program launcher
 super + d
@@ -175,7 +175,7 @@ super + {F6,F7,F8}
 #########################
 
 {Print} 
-	gnome-screenshot -e 'mv $f ~/Imágenes/Screenshots'; notify-send 'Capture Complete'
+	gnome-screenshot -e 'mv $f ~/Imágenes/'; notify-send 'Capture Complete'
 
 #########################
 #      Pavucontrol	#
@@ -211,3 +211,17 @@ super + {n}
 
 super + {XF86AudioPrev,XF86AudioPlay,XF86AudioStop,XF86AudioNext}
 	mpc {prev,toggle,stop,next}
+
+#########################
+#	Telegram	#
+#########################
+
+super + {t}
+	telegram-desktop
+
+#########################
+#	Zathura		#
+#########################
+
+super + {z}
+	zathura

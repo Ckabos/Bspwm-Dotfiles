@@ -15,7 +15,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 wmname LG3D &
 
 # Feh
-feh --bg-fill ~/Imágenes/Wallpapers/Aoi-Ogata-long-hair-black-hair-pigtails-women-mask-1224828-wallhere.com.jpg
+feh --bg-fill ~/Imágenes/Wallpapers/wallpaper.jpg
 
 #Picom
 #compton --config /home/efrain/.config/compton/compton.conf &
@@ -90,7 +90,9 @@ bspc rule -a kdeconnect.daemon desktop='^9' state=floating follow=on
 bspc rule -a Gucharmap desktop='^9' state=tiled follow=on
 bspc rule -a Pavucontrol desktop='^9' state=tiled follow=on
 bspc rule -a Nitrogen desktop='^9' state=tiled follow=on
+bspc rule -a Flash_tool desktop='^9' state=tiled follow=on
 bspc rule -a Qalculate-gtk desktop='^10' state=tiled follow=on
 bspc rule -a GeoGebra desktop='^10' state=fullscreen follow=on
 bspc rule -a CrossCode desktop='^10' state=fullscreen follow=on
 bspc rule -a SkullGirls desktop='^10' state=fullscreen follow=on
+bspc rule -a "Cyber Shadow" desktop='^10' state=fullscreen follow=on
